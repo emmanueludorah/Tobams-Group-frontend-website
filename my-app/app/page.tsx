@@ -1,5 +1,4 @@
 import Navbar from "@/components/layout/Navbar";
-import Hero from "@/components/sections/Hero";
 import Transformation from "@/components/sections/Transformation";
 import LMSIntro from "@/components/sections/LMSIntro";
 import Consultant from "@/components/sections/Consultant";
@@ -14,7 +13,6 @@ export default function Home() {
   return (
     <main>
       <Navbar />
-      <Hero />
       <Transformation />
       <LMSIntro />
       <Consultant />

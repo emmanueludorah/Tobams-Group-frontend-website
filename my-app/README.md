@@ -1,251 +1,137 @@
 # Tobams Group - Frontend Website
 
-Frontend website for Tobams Group, a consultancy firm in Africa focused on talent, training, and organizational change.
+Professional website for Tobams Group, a consultancy firm specializing in talent acquisition, training, and organizational development in Africa.
 
-## Features
+## Live URL
 
-- **Responsive Design** - Works on all device sizes
-- **Reusable Components** - Well-structured React components
-- **Smooth Animations** - Interactive elements
-- **Fast Images** - Next.js Image optimization
-- **Accessible** - Semantic HTML
-- **Fast Build** - Turbopack bundler
-- **Clean Styling** - Tailwind CSS with custom styles
+https://tobams-group.vercel.app (deployment pending)
+
+## Design Reference
+
+Figma Design: https://www.figma.com/design/wuqCLkK1feTgB6xxSRRwZu/Frontend-Intern-Assessment?node-id=0-1&p=f&t=qxnAKp4Ael8QtLYz-0
 
 ## Tech Stack
 
-- **Framework**: [Next.js 16.2.4](https://nextjs.org/) - React framework with App Router
-- **Language**: [TypeScript](https://www.typescriptlang.org/) - Type-safe code
-- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/) - CSS utilities
-- **React**: [React 19.2.4](https://react.dev/) - React with hooks
-- **Build Tool**: Turbopack - Fast bundler
-- **Package Manager**: npm
+- Next.js 16.2.4 with App Router
+- React 19.2.4
+- TypeScript for type safety
+- Tailwind CSS 4 for styling
+- Turbopack for fast builds
+- Next.js Image optimization
 
-## Installation
+## Setup Steps
 
-### Prerequisites
-- Node.js 18.x or higher
-- npm or yarn
-
-### Setup Steps
-
-1. **Clone repo**
+1. Clone the repository
    ```bash
-   git clone <repository-url>
-   cd frontennd-intern/my-app
+   git clone <https://github.com/emmanueludorah/Tobam-Group_Frontend-website>
+   cd my-app
    ```
 
-2. **Install packages**
+2. Install dependencies
    ```bash
    npm install
    ```
 
-3. **Start dev server**
+3. Start development server
    ```bash
    npm run dev
    ```
 
-4. **Open in browser**
-   ```
-   http://localhost:3000
-   ```
+4. Open http://localhost:3000 in your browser
 
-## Available Scripts
+## Available Commands
 
-```bash
-# Development server
-npm run dev
-
-# Production build
-npm run build
-
-# Start production server
-npm start
-
-# Run linter
-npm run lint
-```
+Development: npm run dev
+Production build: npm run build
+Start production: npm start
+Lint: npm run lint
 
 ## Project Structure
 
-```
 my-app/
-├── app/                      # Pages and layouts
-├── components/
-│   ├── layout/              # Layout (Navbar)
-│   ├── sections/            # Page sections (Hero, Footer, etc.)
-│   └── ui/                  # UI components (Button, Card, etc.)
-├── lib/                     # Utils
-├── public/images/           # Images and icons
-├── styles/                  # Styles
-└── Config files             # package.json, tsconfig.json, etc.
-```
+- app/ - Pages and layouts
+- components/layout/ - Navigation components
+- components/sections/ - Page sections
+- components/ui/ - Reusable UI components
+- public/images/ - Images and icons
+- styles/ - CSS files
 
-## Design System
+## Design Decisions
 
-### Colors
-- **Primary Purple**: `#4a1d5e`
-- **Dark Purple**: `#2C0922`
-- **Light Pink**: `#F5D8E3`
-- **Accent Pink**: `#E33B6B`
-- **Light Gray**: `#F0EBF1`
-- **Text Dark**: `#1a1a1a`, `#333333`
-- **Text Light**: `#cccccc`, `#E8E8E8`
+Mobile-First Approach: All layouts built for mobile first, then enhanced for larger screens using Tailwind breakpoints.
 
-### Typography
-- **Headings**: Nunito (weight 700)
-- **Body**: Nunito Sans (weights 400, 500, 600)
-- **Font Size**: CSS `clamp()` for responsive scaling
+Responsive Typography: CSS clamp() function used for fluid font scaling across all screen sizes.
 
-### Breakpoints
-- **Mobile**: < 640px
-- **Tablet**: 640px - 1024px
-- **Desktop**: > 1024px
+Component Reusability: Sections broken into reusable components for maintainability and consistency.
 
-## Pages and Sections
+Tailwind CSS: Utility-first CSS framework chosen for rapid development and consistent styling.
 
-### Home Page (`/`)
-The main landing page featuring:
+Next.js Image: All images use Next.js Image component for optimization and performance.
 
-1. **Navbar** - Logo and menu
-2. **Hero** - Welcome banner
-3. **Transformation** - Training overview
-4. **LMS Intro** - Academy introduction
-5. **Consultant** - Training programs
-6. **Management Program** - Training and development
-7. **Management Dev** - Program details
-8. **Learning CEO** - CEO hub
-9. **Training Consultant** - Program details
-10. **Testimonials** - Client stories with carousel
-11. **Footer** - Contact and links
+Color System: Consistent color palette with primary purples, accent pinks, and neutral grays for brand consistency.
 
-## Key Components
+Grid Layouts: CSS Grid and Flexbox used for responsive two-column layouts that stack on mobile.
 
-### Navbar
-- Mobile and desktop menu
-- Account dropdown
-- Assessment button
-- Logo
+Responsive Images: Images use aspect ratio to maintain proportions across all screen sizes.
 
-### Hero
-- Headline and message
-- Subheading
-- CTA buttons
-- Responsive image
+## Known Issues
 
-### Testimonials
-- Client cards with avatars
-- Carousel navigation
-- Responsive grid
-- Client quotes
+None at this time. All responsive layouts tested across mobile, tablet, and desktop views.
 
-### Footer
-- Contact button
-- Company info and social links
-- Multi-column nav
-- Email and phone
-- Office locations
-- Links and copyright
+## Features
 
-## Customization
+Fully responsive design for all devices
+Mobile-first navigation with hamburger menu
+Carousel testimonials with navigation arrows
+Multi-column footer layout
+Reusable button and card components
+Semantic HTML structure
+Fast page load with image optimization
+TypeScript for code reliability
 
-### Change Colors
-Update hex values in style props:
-```jsx
-style={{ color: '#4a1d5e' }}
-```
+## Component Highlights
 
-### Change Typography
-Font sizes scale with CSS `clamp()`:
-```jsx
-fontSize: 'clamp(minPx, vw%, maxPx)'
-```
+Navbar: Responsive header with logo and mobile menu
+Testimonials: Client stories with carousel navigation
+Footer: Multi-column layout with contact information
+Sections: Modular sections for Training, Management, CEO Hub, and more
+Responsive Grids: 2-column layouts that adapt to mobile
 
-### Add New Sections
-1. Create file in `components/sections/`
-2. Import `Image` from `next/image`
-3. Export component
-4. Add to `app/page.tsx`
+## Color Palette
 
-## Responsive Design
-
-Components use:
-- **Tailwind breakpoints** for layout
-- **CSS clamp()** for scaling
-- **Aspect ratio** for images
-- **Flexbox/Grid** for layouts
-
-## Image Assets
-
-Located in `/public/images/`:
-- Logo and branding
-- Section backgrounds
-- Avatars
-- Icons (mail, phone, social)
-- Decorative images
+Primary Purple: #4a1d5e
+Dark Purple: #2C0922
+Light Pink: #F5D8E3
+Accent Pink: #E33B6B
+Text Dark: #1a1a1a
+Text Light: #cccccc
 
 ## Deployment
 
-### Build for Production
-```bash
+Build for production:
 npm run build
 npm start
-```
 
-### Deploy to Vercel
-```bash
+Deploy to Vercel:
 npm install -g vercel
 vercel
-```
 
-## Troubleshooting
+## Browser Support
 
-**Port 3000 in use?**
-```bash
-npm run dev  # Uses next available port
-```
-
-**Clear cache:**
-```bash
-rm -rf .next node_modules
-npm install
-npm run build
-```
-
-**TypeScript errors?**
-```bash
-npm run build
-```
-
-## Best Practices
-
-- Use **Next.js Image** for all images
-- Use **CSS clamp()** for scaling
-- Use **Tailwind** for layout and spacing
-- Use **inline styles** for colors
-- Test on **multiple screen sizes**
-- Optimize **image file sizes**
-
-## Links
-
-- [Next.js Documentation](https://nextjs.org/docs)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [React Documentation](https://react.dev)
-- [TypeScript Documentation](https://www.typescriptlang.org/docs/)
+Chrome (latest)
+Firefox (latest)
+Safari (latest)
+Edge (latest)
 
 ## Contact
 
-Questions? Contact Tobams Group:
-- **Email**: theteam@tobamsgroup.com
-- **Phone**: +447886600748
-- **Website**: [tobamsgroup.com](https://tobamsgroup.com)
+Email: theteam@tobamsgroup.com
+Phone: +447886600748
 
 ## License
 
 Proprietary. All rights reserved by Tobams Group.
 
----
-
-**Last Updated**: April 2026  
-**Version**: 1.0.0  
-**Status**: Production Ready
+Last Updated: April 2026
+Version: 1.0.0
+Status: Production Ready

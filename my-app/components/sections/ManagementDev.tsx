@@ -2,19 +2,21 @@ import Image from 'next/image';
 
 export default function ManagementDev() {
   return (
-    <section className="w-full py-16 md:py-24" style={{ backgroundColor: '#ffffff' }}>
+    <section className="w-full py-16 md:py-24 bg-white">
       <div className="max-w-6xl mx-auto px-6 md:px-8">
-        <div className="rounded-3xl overflow-hidden" style={{ backgroundColor: '#2C0922', padding: '40px' }}>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="rounded-3xl overflow-hidden bg-[#2C0922] p-10">
+          <div className="flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+            {/* Title for Mobile Only - appears first on mobile */}
+            <div className="order-1 md:hidden w-full">
+              <h2 className="text-white text-[clamp(20px,5vw,32px)] leading-[130%] mb-4">
+                Management Development Program
+              </h2>
+            </div>
+
             {/* Left - Image */}
-            <div className="flex justify-center">
-              <div style={{ 
-                width: '580px',
-                height: '600px',
-                borderTopLeftRadius: '8px',
-                borderTopRightRadius: '8px',
-                borderBottomLeftRadius: '8px',
-                overflow: 'hidden'
+            <div className="order-2 md:order-1 flex justify-center w-full md:w-full">
+              <div className="rounded-[8px] overflow-hidden w-full md:max-w-[580px]" style={{ 
+                aspectRatio: '580/600'
               }}>
                 <div className="relative w-full h-full">
                   <Image 
@@ -29,35 +31,16 @@ export default function ManagementDev() {
             </div>
 
             {/* Right - Content */}
-            <div>
-              <h2 style={{ 
-                color: '#FFFFFF', 
-                fontFamily: "'Nunito', sans-serif", 
-                fontWeight: '700',
-                fontSize: '44px',
-                lineHeight: '130%',
-                marginBottom: '20px'
-              }}>
+            <div className="order-3 md:order-2 w-full">
+              <h2 className="hidden md:block text-white text-[32px] leading-[130%] mb-5">
                 Management Development Program
               </h2>
 
-              <p style={{ 
-                color: '#FFFFFF', 
-                fontSize: '15px', 
-                lineHeight: '1.7', 
-                fontFamily: "'Nunito Sans', sans-serif",
-                marginBottom: '14px'
-              }}>
+              <p className="text-white text-[clamp(13px,3.5vw,15px)] leading-[1.7] mb-3">
                 Tobams Group offers a comprehensive Management Development Program designed to equip corporate organisations with the high-performing leaders they need to thrive.
               </p>
 
-              <p style={{ 
-                color: '#E8E8E8', 
-                fontSize: '15px', 
-                lineHeight: '1.7', 
-                fontFamily: "'Nunito Sans', sans-serif",
-                marginBottom: '28px'
-              }}>
+              <p className="text-[#E8E8E8] text-[clamp(13px,3.5vw,15px)] leading-[1.7] mb-7">
                 Our program includes workshops, seminars, coaching sessions, online courses, and experiential learning opportunities designed to improve leadership, strategic thinking, communication, and other essential managerial competencies for corporate organisations.
               </p>
 
@@ -69,14 +52,7 @@ export default function ManagementDev() {
                   'Stronger Organisational Culture',
                   'Sustainable Growth'
                 ].map((benefit, index) => (
-                  <div key={index} style={{ 
-                    backgroundColor: '#8F6182', 
-                    padding: '14px 20px',
-                    borderRadius: '8px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '12px'
-                  }}>
+                  <div key={index} className="bg-[#8F6182] px-5 py-3.5 rounded-lg flex items-center gap-3">
                     <div className="relative w-5 h-5 flex-shrink-0">
                       <Image 
                         src="/images/Vector (1).png"
@@ -85,12 +61,7 @@ export default function ManagementDev() {
                         className="object-contain"
                       />
                     </div>
-                    <span style={{ 
-                      fontSize: '15px', 
-                      fontFamily: "'Nunito Sans', sans-serif",
-                      color: '#FFFFFF',
-                      fontWeight: '500'
-                    }}>
+                    <span className="text-white text-[clamp(13px,3.5vw,15px)] font-medium">
                       {benefit}
                     </span>
                   </div>

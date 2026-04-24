@@ -18,7 +18,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="w-full" style={{ fontFamily: "'Nunito Sans', sans-serif" }}>
+    <header className="w-full">
       {/* Top header with logo and buttons */}
       <div className="bg-white px-3 sm:px-4 md:px-6 lg:px-8 py-3 sm:py-4 flex justify-between items-center border-b">
         {/* Logo */}
@@ -75,10 +75,10 @@ export default function Navbar() {
 
       {/* Desktop Navigation menu */}
       <nav className="hidden md:block bg-white px-4 md:px-6 lg:px-8 border-b">
-        <ul className="flex gap-4 md:gap-6 text-xs sm:text-sm md:text-sm justify-center py-3 flex-wrap" style={{ color: '#151515' }}>
+        <ul className="flex gap-4 md:gap-6 text-xs sm:text-sm md:text-sm justify-center py-3 flex-wrap text-[#151515]">
           {navLinks.map((link, index) => (
             <li key={index}>
-              <a href="#" className="hover:underline flex items-center gap-1 md:gap-2 whitespace-nowrap" style={{ color: '#151515' }}>
+              <a href="#" className="hover:underline flex items-center gap-1 md:gap-2 whitespace-nowrap text-[#151515]">
                 {link.name}
                 {link.icon && (
                   <div className="relative w-3 h-3 md:w-4 md:h-4">
@@ -99,10 +99,10 @@ export default function Navbar() {
       {/* Mobile Navigation menu */}
       {isMobileMenuOpen && (
         <nav className="md:hidden bg-white border-b">
-          <ul className="flex flex-col gap-0 text-sm px-3 sm:px-4 py-3" style={{ color: '#151515' }}>
+          <ul className="flex flex-col gap-0 text-sm px-3 sm:px-4 py-3 text-[#151515]">
             {navLinks.map((link, index) => (
               <li key={index} className={index < navLinks.length - 1 ? 'border-b py-3' : 'py-3'}>
-                <a href="#" className="block hover:text-gray-600 flex items-center gap-2" style={{ color: '#151515' }}>
+                <a href="#" className="block hover:text-gray-600 flex items-center gap-2 text-[#151515]">
                   {link.name}
                   {link.icon && (
                     <div className="relative w-4 h-4">

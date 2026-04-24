@@ -10,38 +10,25 @@ export default function Consultant() {
   ];
 
   return (
-    <section className="w-full py-12 sm:py-16 md:py-20 lg:py-24" style={{ backgroundColor: '#ffffff', fontFamily: "'Nunito Sans', sans-serif" }}>
+    <section className="w-full py-12 sm:py-16 md:py-20 lg:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 md:gap-16 items-center">
           {/* Left - Content */}
           <div>
             {/* Heading */}
-            <h1 style={{ 
-              color: '#1a1a1a', 
-              fontFamily: "'Nunito', sans-serif", 
-              fontWeight: '600',
-              fontSize: 'clamp(32px, 6vw, 48px)',
-              lineHeight: '150%',
-              marginBottom: '16px sm:20px md:24px'
-            }}>
+            <h1 className="text-[#1a1a1a] text-[clamp(32px,6vw,48px)] leading-[150%] mb-4 sm:mb-5 md:mb-6">
               Corporate Trainings
             </h1>
 
             {/* Description */}
-            <p style={{ 
-              color: '#666666', 
-              fontSize: 'clamp(14px, 3.5vw, 16px)', 
-              lineHeight: '1.6', 
-              fontFamily: "'Nunito Sans', sans-serif",
-              marginBottom: '24px sm:28px md:32px'
-            }}>
+            <p className="text-[#666666] text-[clamp(14px,3.5vw,16px)] leading-[1.6] mb-6 sm:mb-7 md:mb-8">
               Empower your team with our customised Corporate Training programs designed to address the unique needs and objectives of your organisation. Our expert facilitators work closely with your team to deliver tailored learning experiences that align with your company's goals and values.
             </p>
 
             {/* Training Types List */}
-            <div style={{ color: '#333333' }}>
+            <div className="text-[#333333]">
               {trainingTypes.map((type, index) => (
-                <div key={index} style={{ marginBottom: '12px sm:14px md:16px', display: 'flex', alignItems: 'center', gap: '10px sm:12px' }}>
+                <div key={index} className="mb-3 sm:mb-4 md:mb-4 flex items-center gap-[10px] sm:gap-3">
                   <div className="relative w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0">
                     <Image 
                       src="/images/Vector.png"
@@ -50,14 +37,14 @@ export default function Consultant() {
                       className="object-contain"
                     />
                   </div>
-                  <span style={{ fontSize: 'clamp(14px, 3.5vw, 16px)', fontFamily: "'Nunito Sans', sans-serif" }}>{type}</span>
+                  <span className="text-[clamp(14px,3.5vw,16px)]">{type}</span>
                 </div>
               ))}
             </div>
           </div>
 
           {/* Right - Image */}
-          <div className="flex justify-center md:justify-end">
+          <div className="flex justify-center md:justify-end md:order-last">
             <div className="relative w-full max-w-sm md:max-w-none" style={{ 
               aspectRatio: '602/346',
               borderTopLeftRadius: '56px',
@@ -79,19 +66,4 @@ export default function Consultant() {
       </div>
     </section>
   );
-<div 
-  style={{
-    borderBottomLeftRadius: '12px',
-    opacity: 1,
-    transform: 'rotate(0deg)',
-    position: 'relative' // Required for fill images
-  }}
->
-  <Image 
-    src="/images/Corp_T.jpg"
-    alt="Corporate Training"
-    fill
-    className="object-cover"
-    priority
-  />
-</div>}
+}

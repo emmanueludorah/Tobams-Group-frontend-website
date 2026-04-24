@@ -11,41 +11,20 @@ export default function LearningCEO() {
   ];
 
   return (
-    <section className="w-full py-8 md:py-12" style={{ backgroundColor: '#ffffff' }}>
+    <section className="w-full py-8 md:py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-        <div className="rounded-3xl p-8 md:p-12" style={{ backgroundColor: '#F5D8E3' }}>
+        <div className="rounded-3xl p-8 md:p-12 bg-[#F5D8E3]">
           {/* Header Section */}
           <div className="mb-8 md:mb-10">
-            <p style={{
-              color: '#1671D9',
-              fontSize: 'clamp(14px, 3vw, 16px)',
-              fontFamily: "'Nunito Sans', sans-serif",
-              fontStyle: 'italic',
-              fontWeight: '500',
-              marginBottom: '4px'
-            }}>
+            <p className="text-[#1671D9] text-[clamp(14px,3vw,16px)] italic font-medium mb-1">
               Learning With Our CEO:
             </p>
 
-            <h2 style={{
-              color: '#571244',
-              fontFamily: "'Nunito', sans-serif",
-              fontWeight: '700',
-              fontSize: 'clamp(28px, 6vw, 48px)',
-              lineHeight: '130%',
-              fontStyle: 'italic',
-              marginBottom: '16px'
-            }}>
+            <h2 className="text-[#571244] text-[clamp(28px,6vw,48px)] leading-[130%] italic mb-4">
               Transformation Hub With Jite Newton
             </h2>
 
-            <p style={{
-              color: '#151515',
-              fontSize: 'clamp(13px, 3.5vw, 15px)',
-              lineHeight: '1.8',
-              fontFamily: "'Nunito Sans', sans-serif",
-              marginBottom: '0'
-            }}>
+            <p className="text-[#151515] text-[clamp(13px,3.5vw,15px)] leading-[1.8]">
               Transformation Hub with Jite Newton is a flagship webinar series curated by the CEO, Dr. Jite Newton. Designed to elevate career trajectories and leadership capabilities, this exclusive event offers invaluable insights and strategies for personal and professional growth. Whether you're seeking to advance your career or enhance your leadership skills, the Transformation Hub provides a transformative learning experience to unlock your full potential and drive success in your endeavours.
             </p>
           </div>
@@ -71,7 +50,7 @@ export default function LearningCEO() {
             <div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                 {features.map((feature, index) => (
-                  <div key={index} className="rounded-lg p-4" style={{ backgroundColor: '#ffffff' }}>
+                  <div key={index} className="rounded-lg p-4 bg-white">
                     <div className="flex items-center gap-3">
                       <div className="relative w-5 h-5 flex-shrink-0">
                         <Image 
@@ -81,12 +60,7 @@ export default function LearningCEO() {
                           className="object-contain"
                         />
                       </div>
-                      <span style={{
-                        color: '#333333',
-                        fontSize: 'clamp(13px, 3.5vw, 15px)',
-                        fontFamily: "'Nunito Sans', sans-serif",
-                        fontWeight: '500'
-                      }}>
+                      <span className="text-[#333333] text-[clamp(13px,3.5vw,15px)] font-medium">
                         {feature}
                       </span>
                     </div>
@@ -95,21 +69,7 @@ export default function LearningCEO() {
               </div>
 
               {/* Learn More Button */}
-              <button style={{
-                backgroundColor: '#571244',
-                color: '#ffffff',
-                padding: '12px 24px',
-                borderRadius: '6px',
-                border: 'none',
-                fontFamily: "'Nunito Sans', sans-serif",
-                fontSize: 'clamp(13px, 3.5vw, 15px)',
-                fontWeight: '600',
-                cursor: 'pointer',
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '8px',
-                transition: 'opacity 0.3s'
-              }}>
+              <button className="bg-[#571244] text-white px-6 py-3 rounded-md inline-flex items-center gap-2 text-[clamp(13px,3.5vw,15px)] hover:opacity-80 transition">
                 Learn More
                 <span>↗</span>
               </button>
