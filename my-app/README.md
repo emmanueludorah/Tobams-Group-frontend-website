@@ -23,7 +23,7 @@ Figma Design: https://www.figma.com/design/wuqCLkK1feTgB6xxSRRwZu/Frontend-Inter
 
 1. Clone the repository
    ```bash
-   git clone <https://github.com/emmanueludorah/Tobam-Group_Frontend-website>
+   git clone <https://github.com/emmanueludorah/Tobams-Group_Frontend-website>
    cd my-app
    ```
 
