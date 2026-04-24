@@ -58,14 +58,14 @@ export default function LMSIntro() {
                   ))}
                 </div>
               </div>
-              <button className="block md:hidden px-6 sm:px-7 md:px-8 py-2 sm:py-2.5 md:py-3 rounded-md text-white transition duration-300 hover:opacity-90 inline-flex items-center gap-2 text-sm sm:text-base bg-[#4a1d5e]">
+              <button className="block md:hidden px-6 sm:px-7 md:px-8 py-2 sm:py-2.5 md:py-3 rounded-md text-white transition duration-300 hover:opacity-90 inline-flex items-center gap-2 text-sm sm:text-base bg-[#571244]">
               Learn More
               <span>↗</span>
             </button>
             </div>
 
             {/* Learn More Button */}
-            <button className="hidden md:inline-flex px-6 sm:px-7 md:px-8 py-2 sm:py-2.5 md:py-3 rounded-md text-white transition duration-300 hover:opacity-90 items-center gap-2 text-sm sm:text-base bg-[#4a1d5e]">
+            <button className="hidden md:inline-flex px-6 sm:px-7 md:px-8 py-2 sm:py-2.5 md:py-3 rounded-md text-white transition duration-300 hover:opacity-90 items-center gap-2 text-sm sm:text-base bg-[#571244]">
               Learn More
               <span>↗</span>
             </button>
