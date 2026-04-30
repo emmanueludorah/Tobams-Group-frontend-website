@@ -4,8 +4,7 @@ Professional website for Tobams Group, a consultancy firm specializing in talent
 
 ## Live URL
 
-https://tobams-group.vercel.app (deployment pending)
-
+https://tobams-group-frontend-website.vercel.app/
 ## Design Reference
 
 Figma Design: https://www.figma.com/design/wuqCLkK1feTgB6xxSRRwZu/Frontend-Intern-Assessment?node-id=0-1&p=f&t=qxnAKp4Ael8QtLYz-0
